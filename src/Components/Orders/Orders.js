@@ -4,7 +4,7 @@ import ProductImg from "../../Assets/Images/Img/MaskGroup.png";
 import Karzinka from "../../Assets/Images/Img/karzinka.svg";
 import { useRef } from "react";
 
-export default function Orders() {
+export function Orders() {
   const btnActive = useRef();
 
   let imputArray = [
