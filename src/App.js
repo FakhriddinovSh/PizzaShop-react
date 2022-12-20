@@ -6,25 +6,18 @@ import { Orders } from "./Components/Orders/Orders";
 import { Sidebar } from "./Components/Sh-SideBar/Sh-Sidebar";
 import { MainTop } from "./Components/Sh-mainTop/Sh-mainTop";
 import { MainTopMenu } from "./Components/Sh-mainTopMenu/Sh-mainTopMenu";
+import { Route, Routes } from "react-router-dom";
+import { Doashbard } from "./Components/Pages/Doashbard/Doashbard";
+import { ChooseDishes } from "./Components/Hero/ChooseDishes";
 
 function App() {
   return (
     <>
-      <div className="d-flex">
-        <div>
-          <Sidebar />
-        </div>
-        <div
-          style={{
-            backgroundColor: "#252836",
-            paddingLeft: "10px",
-            paddingRight: "38px",
-          }}>
-          <MainTop />
-          <MainTopMenu />
-        </div>
-        {<Orders />}
+      <div>
+        {<ChooseDishes />}
       </div>
+
+
     </>
   );
 }
