@@ -1,21 +1,52 @@
-// .list-item {
-// 	position: relative;
-// 	padding-top: 13px;
-// 	padding-bottom: 11px;
-// 	padding-left: 12px;
-// 	padding-right: 24px;
-// 	background-color: darkcyan;
-// 	// background: #252836;
-// 	border-radius: 12px 0px 0px 12px;
-// }
+.list-link {
+	position: relative;
+	margin-bottom: 26px;
+	padding-top: 31px;
+	padding-bottom: 34px;
+	padding-left: 12px;
+	padding-right: 23.5px;
+	background: transparent;
+	border-radius: 12px 0px 0px 12px;
+}
 
-/* .list-item::before {
+.list-link--active {
+	background: #252836;
+	border-radius: 12px 0px 0px 12px;
+}
+
+.list-link--active::after {
 	position: absolute;
+	content: '';
 	width: 12px;
 	height: 12px;
 	right: 0;
-	top: -12px;
-	background-image: url('../../Assets//Images/Icons/rectangle-top.svg');
+	top: -10px;
+	background-image: url('../../Assets/Images/Icons/rectangle-top.svg');
 	background-repeat: no-repeat;
+}
+
+.list-link--active::before {
+	position: absolute;
 	content: '';
-} */
+	width: 12px;
+	height: 12px;
+	right: 0;
+	bottom: -10px;
+	background-image: url('../../Assets/Images/Icons/rectangle-bottom.svg');
+	background-repeat: no-repeat;
+}
+
+.list-image {
+	width: 56px;
+	height: 56px;
+	padding: 18px;
+	background-color: transparent;
+	color: #ea7c69;
+}
+
+.list-link--active .list-image {
+	color: #fff;
+	background: #ea7c69;
+	box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.32);
+	border-radius: 8px;
+}

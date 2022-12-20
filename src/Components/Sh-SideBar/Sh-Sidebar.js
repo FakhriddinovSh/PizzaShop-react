@@ -15,31 +15,31 @@ import './Sh-Sidebar.scss';
 export const Sidebar = () => {
 	const menuData = [
 		{
-			imageUrl: <MenuSecond svg="svg" />,
+			imageUrl: <MenuSecond svg="svg" className="list-image" />,
 			path: '/home',
 		},
 		{
-			imageUrl: <MenuThird svg="svg" />,
+			imageUrl: <MenuThird svg="svg" className="list-image" />,
 			path: '/two',
 		},
 		{
-			imageUrl: <MenuFourth svg="svg" />,
+			imageUrl: <MenuFourth svg="svg" className="list-image" />,
 			path: '/piece',
 		},
 		{
-			imageUrl: <MenuFivth svg="svg" />,
+			imageUrl: <MenuFivth svg="svg" className="list-image" />,
 			path: '/mail',
 		},
 		{
-			imageUrl: <MenuSixth svg="svg" />,
+			imageUrl: <MenuSixth svg="svg" className="list-image" />,
 			path: '/notification',
 		},
 		{
-			imageUrl: <MenuSeventh svg="svg" />,
+			imageUrl: <MenuSeventh svg="svg" className="list-image" />,
 			path: '/settings',
 		},
 		{
-			imageUrl: <MenuEigth svg="svg" />,
+			imageUrl: <MenuEigth svg="svg" className="list-image" />,
 			path: '/exit',
 		},
 	];
@@ -53,7 +53,7 @@ export const Sidebar = () => {
 
 	return (
 		<div style={styles}>
-			<ul className="d-flex justify-content-between flex-column align-items-center list-unstyled">
+			<ul className="d-flex justify-content-between flex-column align-items-center list-unstyled ps-3">
 				<img
 					style={{ marginBottom: '26px' }}
 					src={Logo}
@@ -62,23 +62,14 @@ export const Sidebar = () => {
 					alt="Logo"
 				/>
 				{menuData.map((item) => (
-					<li
-						onClick={() =>
-							console.log(
-								document
-									.querySelector('#list-item')
-									.classList.toggle('list-item--active'),
-							)
-						}
-						className="ms-0 list-item"
-						id="list-item"
-						style={{ marginBottom: '26px' }}
-					>
+					<li style={{ marginBottom: '26px' }}>
 						<NavLink
-							className={({ isActive }) =>
-								isActive ? 'svg--active' : 'svg'
-							}
 							to={item.path}
+							className={({ isActive }) =>
+								isActive
+									? 'list-link list-link--active'
+									: 'list-link'
+							}
 						>
 							{item.imageUrl}
 						</NavLink>
