@@ -1,0 +1,27 @@
+.menuItem {
+	margin-right: 32px;
+	font-size: 14px;
+	line-height: 140%;
+	// color: #ea7c69;
+	color: #fff;
+}
+
+.menuTopLink:hover {
+	color: #ea7c69 !important;
+}
+
+.menuItem:nth-child(1) {
+	position: relative;
+}
+
+.menuItem:nth-child(1)::after {
+	position: absolute;
+	left: 0;
+	bottom: -14px;
+	width: 37px;
+	background: #ea7c69;
+	border-top: 3px solid #ea7c69;
+	border-radius: 5px;
+	content: '';
+	z-index: 2;
+}

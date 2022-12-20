@@ -1,0 +1,51 @@
+.mainTop-wrapper {
+	width: 100%;
+	min-width: 1000px;
+	padding-top: 24px;
+	color: #fff;
+}
+
+.topDate {
+	color: #e0e6e9;
+}
+
+.form-input {
+	position: relative;
+	width: 100%;
+	min-width: 220px;
+	padding: 14px;
+	padding-left: 42px;
+	background: #2d303e;
+	border: 1px solid #393c49;
+	border-radius: 8px;
+	font-size: 14px;
+	line-height: 140%;
+	color: #abbbc2;
+}
+
+.topList {
+	position: relative;
+}
+
+.topList::after {
+	position: absolute;
+	bottom: -13px;
+	width: 100%;
+	border-top: 1px solid #393c49;
+	content: '';
+}
+
+.topTitle {
+	font-weight: 600;
+	font-size: 28px;
+}
+
+.form-search-icon {
+	position: absolute;
+	left: 10px;
+	top: 13px;
+	width: 20px;
+	height: 20px;
+	background-image: url('../../Assets//Images//Icons/search-icon.svg');
+	background-repeat: no-repeat;
+}
