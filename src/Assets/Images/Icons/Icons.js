@@ -37,10 +37,10 @@ import './Icons.scss';
 // 	);
 // };
 
-export const MenuSecond = ({ svg }) => {
+export const MenuSecond = ({ className }) => {
 	return (
 		<svg
-			className={svg}
+			className={className}
 			width="24"
 			height="24"
 			viewBox="0 0 24 24"
@@ -55,10 +55,10 @@ export const MenuSecond = ({ svg }) => {
 	);
 };
 
-export const MenuThird = ({ svg }) => {
+export const MenuThird = ({ className }) => {
 	return (
 		<svg
-			className={svg}
+			className={className}
 			width="24"
 			height="24"
 			viewBox="0 0 24 24"
@@ -73,10 +73,10 @@ export const MenuThird = ({ svg }) => {
 	);
 };
 
-export const MenuFourth = ({ svg }) => {
+export const MenuFourth = ({ className }) => {
 	return (
 		<svg
-			className={svg}
+			className={className}
 			width="24"
 			height="24"
 			viewBox="0 0 24 24"
@@ -91,10 +91,10 @@ export const MenuFourth = ({ svg }) => {
 	);
 };
 
-export const MenuFivth = ({ svg }) => {
+export const MenuFivth = ({ className }) => {
 	return (
 		<svg
-			className={svg}
+			className={className}
 			width="24"
 			height="24"
 			viewBox="0 0 24 24"
@@ -109,10 +109,10 @@ export const MenuFivth = ({ svg }) => {
 	);
 };
 
-export const MenuSixth = ({ svg }) => {
+export const MenuSixth = ({ className }) => {
 	return (
 		<svg
-			className={svg}
+			className={className}
 			width="24"
 			height="24"
 			viewBox="0 0 24 24"
@@ -127,10 +127,10 @@ export const MenuSixth = ({ svg }) => {
 	);
 };
 
-export const MenuSeventh = ({ svg }) => {
+export const MenuSeventh = ({ className }) => {
 	return (
 		<svg
-			className={svg}
+			className={className}
 			width="24"
 			height="24"
 			viewBox="0 0 24 24"
@@ -145,10 +145,10 @@ export const MenuSeventh = ({ svg }) => {
 	);
 };
 
-export const MenuEigth = ({ svg }) => {
+export const MenuEigth = ({ className }) => {
 	return (
 		<svg
-			className={svg}
+			className={className}
 			width="24"
 			height="24"
 			viewBox="0 0 24 24"
