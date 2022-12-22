@@ -11,7 +11,7 @@ export const ChooseDishes = () => {
 		<>
 			<Routes>
 				<Route
-					path="/home"
+					path="/"
 					element={
 						<>
 							<div className="d-flex">

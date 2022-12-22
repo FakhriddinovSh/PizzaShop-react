@@ -16,7 +16,7 @@ export const Sidebar = () => {
 	const menuData = [
 		{
 			imageUrl: <MenuSecond svg="svg" className="list-image" />,
-			path: '/home',
+			path: '/',
 		},
 		{
 			imageUrl: <MenuThird svg="svg" className="list-image" />,
