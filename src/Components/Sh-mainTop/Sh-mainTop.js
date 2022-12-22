@@ -2,7 +2,7 @@ import './Sh-mainTop.scss';
 
 export const MainTop = () => {
 	return (
-		<div className="d-flex justify-content-between mainTop-wrapper align-items-center">
+		<div className="d-flex justify-content-between mainTop-wrapper align-items-center main-top-with-inp">
 			<div>
 				<h2 className="topTitle">Jaegar Resto</h2>
 				<time dateTime="2021-01-02" className="topDate">

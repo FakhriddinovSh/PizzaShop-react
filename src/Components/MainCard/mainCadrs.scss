@@ -1,0 +1,32 @@
+.hero-cards {
+  width: 70%;
+  padding: 34px 40px 0 10px;
+}
+.hero-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 68px;
+}
+.hero-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.hero-cards__select {
+  position: relative;
+  padding: 14px;
+  padding-left: 44px;
+  color: #ffffff;
+  background: #1f1d2b;
+  border: 1px solid #393c49;
+  border-radius: 8px;
+  appearance: none;
+  background-image: url("../../Assets//Images//Icons//arrow-ios-down.svg");
+  background-size: 20px 20px;
+  background-position: 15px calc(50% + 0px);
+  background-repeat: no-repeat;
+}
+
