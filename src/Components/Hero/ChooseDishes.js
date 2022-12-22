@@ -7,6 +7,7 @@ import { MainTop } from "../Sh-mainTop/Sh-mainTop";
 import { MainTopMenu } from "../Sh-mainTopMenu/Sh-mainTopMenu";
 import { Sidebar } from "../Sh-SideBar/Sh-Sidebar";
 import { HeroMainCards } from "../MainCard/MainCards";
+import { MostOrder } from "../MostOrder/MostOrder";
 
 export const ChooseDishes = () => {
   return (
@@ -50,9 +51,10 @@ export const ChooseDishes = () => {
                     paddingRight: "38px",
                   }}>
                     <Doashbard />
-                   {/* <MainTop /> */}
-                  {/* <MainTopMenu /> */}
+
                 </div>
+
+                <MostOrder />
               </div>
             </>
           }
