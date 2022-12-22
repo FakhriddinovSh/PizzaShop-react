@@ -1,9 +1,17 @@
 .dashboard-item {
-	width: 199px;
-	height: 143px;
+	width: 250px;
+	height: 168px;
 	padding: 16px;
 	background: #1f1d2b;
 	border-radius: 8px;
+}
+
+.dashboard-growth {
+	color: #50d1aa;
+}
+
+.dashboard-item:nth-child(2) .dashboard-growth {
+	color: #ff7ca3;
 }
 
 .dashboard-item:nth-child(2) {

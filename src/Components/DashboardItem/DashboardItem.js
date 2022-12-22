@@ -9,10 +9,14 @@ export const DashboardItem = ({
 }) => {
 	return (
 		<li className="text-white dashboard-item">
-			<div className="d-flex align-items-center justify-content-between mb-2">
+			<div className="d-flex align-items-center mb-2">
 				{mainIcon}
-				<span>{growth}</span>
-				{secondaryIcon}
+				<div className="ms-4">
+					<span className="me-2 d-inline-flex align-items-center dashboard-growth">
+						{growth}
+					</span>
+					{secondaryIcon}
+				</div>
 			</div>
 			<p className="dashboard-item-cost">{cost}</p>
 			<p className="dashboard-item-total">{total}</p>

@@ -1,5 +1,5 @@
 .report-wrapper {
-	width: 646px;
+	width: 797px;
 	padding-top: 33px;
 	padding-left: 24px;
 	padding-right: 16px;
@@ -41,4 +41,12 @@
 .report-list-item {
 	font-weight: 600;
 	font-size: 14px;
+}
+
+.report-list-after::after {
+	position: absolute;
+	content: '';
+	bottom: 0px;
+	width: 100%;
+	border-top: 1px solid #393c49;
 }
