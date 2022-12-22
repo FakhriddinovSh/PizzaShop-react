@@ -1,0 +1,44 @@
+.report-wrapper {
+	width: 646px;
+	padding-top: 33px;
+	padding-left: 24px;
+	padding-right: 16px;
+	background: #1f1d2b;
+	border-radius: 8px;
+	color: #fff;
+}
+
+.order-title {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 140%;
+}
+
+.order-filter-button {
+	position: relative;
+	padding: 13.5px 0;
+	padding-right: 14px;
+	padding-left: 44px;
+	background: #1f1d2b;
+	border: 1px solid #393c49;
+	border-radius: 8px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 130%;
+}
+
+.order-filter-button::before {
+	position: absolute;
+	content: '';
+	width: 20px;
+	height: 20px;
+	left: 13px;
+	background-image: url('../../Assets/Images/Icons/Filter-btn.svg');
+	background-repeat: no-repeat;
+}
+
+.report-list-item {
+	font-weight: 600;
+	font-size: 14px;
+}
