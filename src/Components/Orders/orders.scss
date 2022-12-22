@@ -1,18 +1,25 @@
 .order-home {
   position: fixed;
-  right: 0;
   overflow-y: scroll;
+
+  right: 0;
   width: 27%;
   height: 100vh;
   margin-left: auto;
   padding: 24px;
   background-color: #1f1d2b;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
 .order-home__text-top {
   position: fixed;
   padding-top: 24px;
   top: 0;
-  width: 24%;
+  width: 25%;
   background-color: #1f1d2b;
 }
 .order-home__title {
@@ -71,6 +78,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 30px;
 }
 .prosuct-list__name {
   font-weight: 500;
@@ -119,7 +127,7 @@
 .product-buy-box {
   position: fixed;
   bottom: 0;
-  width: 24%;
+  width: 25%;
   padding: 21px 0;
   background-color: #1f1d2b;
   border-top: 1px solid #393c49;

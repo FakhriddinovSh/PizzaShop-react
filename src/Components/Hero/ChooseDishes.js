@@ -2,7 +2,7 @@ import React from "react";
 import "./chooseDishes.scss"
 import { Routes, Route } from "react-router-dom";
 import { Orders } from "../Orders/Orders";
-import { Doashbard } from "../Pages/Doashbard/Doashbard";
+// import { Doashbard } from "../Pages/Doashbard/Doashbard";
 import { MainTop } from "../Sh-mainTop/Sh-mainTop";
 import { MainTopMenu } from "../Sh-mainTopMenu/Sh-mainTopMenu";
 import { Sidebar } from "../Sh-SideBar/Sh-Sidebar";
@@ -13,17 +13,17 @@ export const ChooseDishes = () => {
     <>
       <Routes>
         <Route
-          path="/home"
+          path="/"
           element={
             <>
               <div className="d-flex">
-                <div>
+                <div className="task">
                   <Sidebar />
                 </div>
                 <div
                   style={{
                     backgroundColor: "#252836",
-                    paddingLeft: "10px",
+                    paddingLeft: "130px",
                     paddingRight: "38px",
                   }} className="hero-top">
                   <MainTop />

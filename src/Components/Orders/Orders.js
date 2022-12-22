@@ -3,7 +3,7 @@ import "./orders.scss";
 import ProductImg from "../../Assets/Images/Img/MaskGroup.png";
 import Karzinka from "../../Assets/Images/Img/karzinka.svg";
 import { useRef } from "react";
-
+import { MainCards } from "../Sh-MainCards/Sh-MainCards";
 export function Orders() {
   const btnActive = useRef();
 
@@ -96,18 +96,18 @@ export function Orders() {
 
         <div className="order-home__product-buy">
           <ul className="order-home__product-list product-list list-unstyled">
-            {imputArray.map((item) => (
+            {MainCards.map((item) => (
               <li className="product-list__item d-flex gap-3">
                 <div>
                   <div className="d-flex justify-content-between">
                     <div className="d-flex align-items-center gap-3">
-                      <img src={item.producImg} alt="" />
+                      <img src={item.image} width="45" height="41" alt="" />
                       <div>
                         <p className="prosuct-list__name m-0">
-                          {item.productName}
+                          {item.foodName}
                         </p>
                         <p className="prosuct-list__name product-list__price m-0">
-                          {item.productSprice}
+                          {item.price}
                         </p>
                       </div>
                     </div>
@@ -121,7 +121,7 @@ export function Orders() {
                 </div>
 
                 <div>
-                    <p className="product-list__price-count mt-3">$ 4,58</p>
+                    <p className="product-list__price-count mt-3">{item.price}</p>
                   <button className="product-list__delete d-flex mt-4">
                     <img src={Karzinka} alt="delete" />
                   </button>

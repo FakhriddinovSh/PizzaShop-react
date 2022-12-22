@@ -1,0 +1,27 @@
+.dashboard-wrapper {
+	padding-top: 24px;
+	padding-left: 24px;
+}
+
+.dashboard-top-wrapper {
+	position: relative;
+}
+
+.dashboard-top-wrapper::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	border-left: 1px solid red;
+}
+
+.dashboard-title {
+	margin: 0;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 140%;
+	color: #ffffff;
+}
+
+.dashboard-time {
+	color: #abbbc2;
+}
