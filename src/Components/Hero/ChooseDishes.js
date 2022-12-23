@@ -8,7 +8,8 @@ import { MainTopMenu } from "../Sh-mainTopMenu/Sh-mainTopMenu";
 import { Sidebar } from "../Sh-SideBar/Sh-Sidebar";
 import { HeroMainCards } from "../MainCard/MainCards";
 import { MostOrder } from "../MostOrder/MostOrder";
-
+import { Settings } from "../../Pages/Settings/Settings";
+import {AdminModal} from "../../Pages/AdminModal/AdminModal"
 export const ChooseDishes = () => {
   return (
     <>
@@ -56,6 +57,47 @@ export const ChooseDishes = () => {
                 </div>
 
                 <MostOrder />
+              </div>
+            </>
+          }
+        />
+		<Route
+          path="/settings"
+          element={
+            <>
+              <div className="d-flex">
+                <div className="task">
+                  <Sidebar />
+                </div>
+                <div
+                  style={{
+                    backgroundColor: '#252836',
+                    paddingLeft: '115px',
+                    paddingRight: '38px',
+                    width: '100%',
+                  }}
+                >
+                  <Settings />
+                  {/* <MainTopMenu /> */}
+                </div>
+                {/* {<ChooseDishes />} */}
+              </div>
+            </>
+          }
+        />
+        <Route
+          path="/exit"
+          element={
+            <>
+              <div className="d-flex">
+                <div
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                  }}
+                >
+                  <AdminModal />
+                </div>
               </div>
             </>
           }

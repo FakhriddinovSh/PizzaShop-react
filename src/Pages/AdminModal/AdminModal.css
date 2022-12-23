@@ -1,0 +1,120 @@
+.admin-wrapper {
+	width: 514px;
+	height: 680px;
+	margin: 0 auto;
+	margin-top: 58px;
+	padding-top: 28px;
+	padding-bottom: 32px;
+	padding-right: 32px;
+	padding-left: 32px;
+	background: #1f1d2b;
+	border-radius: 8px;
+}
+
+.admin-title {
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 140%;
+	color: #ffffff;
+}
+
+.admin-button {
+	width: 48px;
+	height: 48px;
+	background-image: url('../../Assets//Images/Icons/admin-close.png');
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+}
+
+.admin-input {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 14px 0;
+	padding-left: 14px;
+	background: #2d303e;
+	border: 1px solid #393c49;
+	border-radius: 8px;
+	color: #fff;
+	outline: none;
+	appearance: none;
+}
+
+.admin-arrow {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	/* padding-left: 30px; */
+	background: url('../../Assets/Images/Icons/to-bottom-arrow.svg');
+	background-size: cover;
+}
+
+.admin-input::placeholder {
+	color: #fff;
+}
+
+.admin-file {
+	position: relative;
+	z-index: 1;
+	background: #2d303e;
+	border: 1px dashed #ea7c69;
+	border-radius: 8px;
+	width: 450px;
+	height: 157px;
+}
+
+.admin-file-desc-1 {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 130%;
+	color: #ea7c69;
+}
+
+.admin-file-desc-2 {
+	font-size: 12px;
+	line-height: 140%;
+	color: #abbbc2;
+}
+
+.admin-file-wrapper::before {
+	position: absolute;
+	content: '';
+	top: -45px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 36px;
+	height: 36px;
+	background-image: url('../../Assets/Images/Icons/drop-icon.svg');
+	background-repeat: no-repeat;
+}
+
+.admin-cancel {
+	width: 45%;
+	padding: 10px 0;
+	border: 1px solid #ea7c69;
+	border-radius: 8px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 140%;
+	color: #ea7c69;
+	background-color: transparent;
+}
+
+.admin-add {
+	width: 45%;
+	padding: 10px 0;
+	font-weight: 600;
+	font-size: 14px;
+	color: #fff;
+	background: #ea7c69;
+	box-shadow: 0px 8px 24px rgba(234, 124, 105, 0.4);
+	border-radius: 8px;
+	border: 1px solid transparent;
+}
+
+.modal-content {
+	background: none !important;
+	border: none;
+}
