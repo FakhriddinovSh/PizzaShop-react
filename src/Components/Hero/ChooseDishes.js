@@ -1,5 +1,5 @@
 import React from "react";
-import "./chooseDishes.scss"
+import "./chooseDishes.scss";
 import { Routes, Route } from "react-router-dom";
 import { Orders } from "../Orders/Orders";
 import { Doashbard } from "../../Pages/Doashbard/Doashbard";
@@ -26,7 +26,8 @@ export const ChooseDishes = () => {
                     backgroundColor: "#252836",
                     paddingLeft: "130px",
                     paddingRight: "38px",
-                  }} className="hero-top">
+                  }}
+                  className="hero-top">
                   <MainTop />
                   <MainTopMenu />
                   <HeroMainCards />
@@ -46,12 +47,12 @@ export const ChooseDishes = () => {
                 </div>
                 <div
                   style={{
+                    width: "75%",
                     backgroundColor: "#252836",
-                    paddingLeft: "10px",
+                    paddingLeft: "130px",
                     paddingRight: "38px",
                   }}>
-                    <Doashbard />
-
+                  <Doashbard />
                 </div>
 
                 <MostOrder />

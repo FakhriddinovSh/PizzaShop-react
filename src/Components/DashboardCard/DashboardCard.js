@@ -6,15 +6,15 @@ import {
 	DashboardSecondaryIconFirst,
 	DashboardSecondaryIconSecond,
 	DashboardSecondaryIconThird,
-	userOne,
-	userTwo,
-	userThree,
-	userFour,
-	userFive,
-	userSix,
 } from '../../Assets/Images/Icons/Icons';
 import { DashboardItem } from '../DashboardItem/DashboardItem';
 import './DashboardCard.css';
+import UserOne from '../../Assets/Images/Img/userOne.png';
+import UserTwo from '../../Assets/Images/Img/userTwo.png';
+import UserThree from '../../Assets/Images/Img/userThree.png';
+import UserFour from '../../Assets/Images/Img/userFour.png';
+import UserFive from '../../Assets/Images/Img/userFive.png';
+import UserSix from '../../Assets/Images/Img/userFive.png';
 import { ReportItem } from '../ReportItem/ReportItem';
 
 export const DashboardCard = () => {
@@ -44,42 +44,42 @@ export const DashboardCard = () => {
 
 	const DashboardReports = [
 		{
-			userIcon: userOne,
+			userIcon: UserOne,
 			userName: 'Eren Jaegar',
 			userMenu: 'Spicy seasoned seafood noodles ',
 			userPayment: '$125',
 			userStatus: 'Completed',
 		},
 		{
-			userIcon: userTwo,
+			userIcon: UserTwo,
 			userName: 'Reiner Braunn',
 			userMenu: 'Salted Pasta with mushroom sauce ',
 			userPayment: '$145',
 			userStatus: 'Preparing',
 		},
 		{
-			userIcon: userThree,
+			userIcon: UserThree,
 			userName: 'Levi Ackerman',
 			userMenu: 'Beef dumpling in hot and sour soup',
 			userPayment: '$105',
 			userStatus: 'Pending',
 		},
 		{
-			userIcon: userFour,
+			userIcon: UserFour,
 			userName: 'Historia Reiss',
 			userMenu: 'Hot spicy fried rice with omelet ',
 			userPayment: '$45',
 			userStatus: 'Completed',
 		},
 		{
-			userIcon: userFive,
+			userIcon: UserFive,
 			userName: 'Hanji Zoe',
 			userMenu: 'Hot spicy fried rice with omelet',
 			userPayment: '$245',
 			userStatus: 'Completed',
 		},
 		{
-			userIcon: userSix,
+			userIcon: UserSix,
 			userName: 'Armin Arlert',
 			userMenu: 'Hot spicy fried rice with omelet',
 			userPayment: '$435',
@@ -89,7 +89,7 @@ export const DashboardCard = () => {
 
 	return (
 		<>
-			<ul className="list-unstyled d-flex pt-4">
+			<ul className="list-unstyled d-flex gap-5" style={{ paddingTop: '95px' }}>
 				{DashboardCards.map((item) => (
 					<DashboardItem
 						mainIcon={item.mainIcon}
@@ -109,7 +109,7 @@ export const DashboardCard = () => {
 					</button>
 				</div>
 				<ul
-					className="list-unstyled d-flex justify-content-between mt-3 pb-3"
+					className="list-unstyled d-flex justify-content-between mt-4 pb-3 position-relative report-list-after"
 					style={{ paddingRight: '74px' }}
 				>
 					<li className="report-list-item">Customer</li>
@@ -118,7 +118,7 @@ export const DashboardCard = () => {
 					<li className="report-list-item">Status</li>
 				</ul>
 
-				<ul className="list-unstyled pt-4">
+				<ul className="list-unstyled pt-3 pb-3">
 					{DashboardReports.map((item) => (
 						<ReportItem
 							userIcon={item.userIcon}
