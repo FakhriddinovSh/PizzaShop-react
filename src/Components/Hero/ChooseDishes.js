@@ -7,6 +7,8 @@ import { MainTop } from '../Sh-mainTop/Sh-mainTop';
 import { MainTopMenu } from '../Sh-mainTopMenu/Sh-mainTopMenu';
 import { Sidebar } from '../Sh-SideBar/Sh-Sidebar';
 import { HeroMainCards } from '../MainCard/MainCards';
+import { Settings } from '../../Pages/Settings/Settings';
+import { AdminModal } from '../../Pages/AdminModal/AdminModal';
 
 export const ChooseDishes = () => {
 	return (
@@ -62,24 +64,42 @@ export const ChooseDishes = () => {
 					}
 				/>
 				<Route
-					path="/*"
+					path="/settings"
 					element={
 						<>
 							<div className="d-flex">
-								<div>
+								<div className="task">
 									<Sidebar />
 								</div>
 								<div
 									style={{
 										backgroundColor: '#252836',
-										paddingLeft: '10px',
+										paddingLeft: '115px',
 										paddingRight: '38px',
+										width: '100%',
 									}}
 								>
-									{/* <MainTop /> */}
+									<Settings />
 									{/* <MainTopMenu /> */}
 								</div>
 								{/* {<ChooseDishes />} */}
+							</div>
+						</>
+					}
+				/>
+				<Route
+					path="/exit"
+					element={
+						<>
+							<div className="d-flex">
+								<div
+									style={{
+										width: '100%',
+										height: '100%',
+									}}
+								>
+									<AdminModal />
+								</div>
 							</div>
 						</>
 					}
