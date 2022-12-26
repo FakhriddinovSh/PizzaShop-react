@@ -78,8 +78,8 @@ export const ChooseDishes = () => {
                   }}
                 >
                   <Settings />
-                  {/* <MainTopMenu /> */}
                 </div>
+                {/* <MainTopMenu /> */}
                 {/* {<ChooseDishes />} */}
               </div>
             </>
