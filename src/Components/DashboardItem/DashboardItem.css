@@ -1,5 +1,5 @@
 .dashboard-item {
-	width: 250px;
+	width: 45%;
 	height: 168px;
 	padding: 16px;
 	background: #1f1d2b;
@@ -10,9 +10,7 @@
 	color: #50d1aa;
 }
 
-.dashboard-item:nth-child(2) .dashboard-growth {
-	color: #ff7ca3;
-}
+
 
 .dashboard-item:nth-child(2) {
 	margin: 0 24px;
