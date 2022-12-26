@@ -2,7 +2,7 @@ import './Sh-mainTopMenu.scss';
 
 export const MainTopMenu = () => {
 	return (
-		<ul className="list-unstyled d-flex align-items-center mt-4 topList">
+		<ul className="list-unstyled d-flex mt-4 topList">
 			<li className="menuItem">
 				<a
 					className="text-decoration-none text-white fw-bolder  menuTopLink"

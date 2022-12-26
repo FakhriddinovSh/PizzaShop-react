@@ -9,8 +9,11 @@ import { Sidebar } from "../Sh-SideBar/Sh-Sidebar";
 import { HeroMainCards } from "../MainCard/MainCards";
 import { MostOrder } from "../MostOrder/MostOrder";
 import { Settings } from "../../Pages/Settings/Settings";
-import {AdminModal} from "../../Pages/AdminModal/AdminModal"
+import { AdminModal } from "../../Pages/AdminModal/AdminModal";
 export const ChooseDishes = () => {
+  
+  
+
   return (
     <>
       <Routes>
@@ -61,7 +64,7 @@ export const ChooseDishes = () => {
             </>
           }
         />
-		<Route
+        <Route
           path="/settings"
           element={
             <>
@@ -71,15 +74,19 @@ export const ChooseDishes = () => {
                 </div>
                 <div
                   style={{
-                    backgroundColor: '#252836',
-                    paddingLeft: '115px',
-                    paddingRight: '38px',
-                    width: '100%',
-                  }}
-                >
-                  <Settings />
+                    backgroundColor: "#252836",
+                    paddingLeft: "115px",
+
+                  }}>
+                  <div
+                    style={{
+                      width: "350px",
+                    }}>
+                      <Settings />
+                  </div>
                 </div>
                 {/* <MainTopMenu /> */}
+
                 {/* {<ChooseDishes />} */}
               </div>
             </>
@@ -92,10 +99,9 @@ export const ChooseDishes = () => {
               <div className="d-flex">
                 <div
                   style={{
-                    width: '100%',
-                    height: '100%',
-                  }}
-                >
+                    width: "100%",
+                    height: "100%",
+                  }}>
                   <AdminModal />
                 </div>
               </div>
