@@ -89,7 +89,7 @@ export const DashboardCard = () => {
 
 	return (
 		<>
-			<ul className="list-unstyled d-flex" style={{ paddingTop: '95px' }}>
+			<ul className="list-unstyled d-flex gap-5" style={{ paddingTop: '95px' }}>
 				{DashboardCards.map((item) => (
 					<DashboardItem
 						mainIcon={item.mainIcon}
