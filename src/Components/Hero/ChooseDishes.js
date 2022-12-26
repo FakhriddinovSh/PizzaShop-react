@@ -11,6 +11,105 @@ import { MostOrder } from "../MostOrder/MostOrder";
 import { Settings } from "../../Pages/Settings/Settings";
 import {AdminModal} from "../../Pages/AdminModal/AdminModal"
 export const ChooseDishes = () => {
+	return (
+		<>
+			<Routes>
+				<Route
+					path="/"
+					element={
+						<>
+							<div className="d-flex">
+								<div className="task">
+									<Sidebar />
+								</div>
+								<div
+									style={{
+										backgroundColor: '#252836',
+										paddingLeft: '130px',
+										paddingRight: '38px',
+									}}
+									className="hero-top"
+								>
+									<MainTop />
+									<MainTopMenu />
+									<HeroMainCards />
+								</div>
+								{<Orders />}
+							</div>
+						</>
+					}
+				/>
+				<Route
+					path="/piece"
+					element={
+						<>
+							<div className="d-flex">
+								<div className="task" style={{ zIndex: '1' }}>
+									<Sidebar />
+								</div>
+								<div
+									style={{
+										width: '100%',
+										backgroundColor: '#252836',
+										paddingLeft: '109px',
+										paddingRight: '38px',
+									}}
+								>
+									<Doashbard />
+									{/* <MainTop /> */}
+									{/* <MainTopMenu /> */}
+								</div>
+							</div>
+						</>
+					}
+				/>
+				<Route
+					path="/settings/*"
+					element={
+						<>
+							<div className="d-flex">
+								<div className="task">
+									<Sidebar />
+								</div>
+								<div
+									style={{
+										backgroundColor: '#252836',
+										paddingLeft: '115px',
+										paddingRight: '38px',
+										width: '100%',
+									}}
+								>
+									<Settings />
+									{/* <MainTopMenu /> */}
+								</div>
+
+								{/* {<ChooseDishes />} */}
+							</div>
+						</>
+					}
+				/>
+
+				<Route
+					path="/exit"
+					element={
+						<>
+							<div className="d-flex">
+								<div
+									style={{
+										width: '100%',
+										height: '100%',
+									}}
+								>
+									<AdminModal />
+								</div>
+							</div>
+						</>
+					}
+				/>
+			</Routes>
+		</>
+	);
+
   return (
     <>
       <Routes>
@@ -127,4 +226,5 @@ export const ChooseDishes = () => {
       </Routes>
     </>
   );
+
 };
