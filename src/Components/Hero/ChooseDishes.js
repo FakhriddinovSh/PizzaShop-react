@@ -64,7 +64,7 @@ export const ChooseDishes = () => {
 					}
 				/>
 				<Route
-					path="/settings"
+					path="/settings/*"
 					element={
 						<>
 							<div className="d-flex">
@@ -82,11 +82,13 @@ export const ChooseDishes = () => {
 									<Settings />
 									{/* <MainTopMenu /> */}
 								</div>
+
 								{/* {<ChooseDishes />} */}
 							</div>
 						</>
 					}
 				/>
+
 				<Route
 					path="/exit"
 					element={

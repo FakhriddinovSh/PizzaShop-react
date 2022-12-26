@@ -1,16 +1,16 @@
 import { NavLink } from 'react-router-dom';
 import './SettingsItem.css';
 
-export const SettingsItem = ({ settinsIcon, title, info }) => {
+export const SettingsItem = ({ settinsIcon, title, info, path }) => {
 	return (
 		<li onClick={(e) => console.log(e.target)}>
 			<NavLink
 				className={({ isActive }) =>
 					isActive
 						? 'settings-item settings-item--active text-decoration-none d-flex'
-						: ' settings-item '
+						: ' settings-item'
 				}
-				to={'/settings'}
+				to={`/settings${path}`}
 			>
 				<div
 					style={{ width: '15px', height: '15px' }}
