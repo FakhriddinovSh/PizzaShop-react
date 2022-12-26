@@ -56,6 +56,8 @@ export function Orders() {
 		btnActive.current.classList.toggle('oreder-home__dine');
 	};
 
+	// Push qildim
+
 	return (
 		<div className="order-home">
 			<div>
