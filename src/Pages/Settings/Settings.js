@@ -56,6 +56,8 @@ export const Settings = () => {
 		},
 	];
 
+	// Hello world
+
 	return (
 		<div className="text-white pt-4 ps-4">
 			<h2>Settings</h2>
