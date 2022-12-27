@@ -62,7 +62,7 @@ export const Sidebar = () => {
 					alt="Logo"
 				/>
 				{menuData.map((item) => (
-					<li style={{ marginBottom: '26px' }}>
+					<li key={item.path} style={{ marginBottom: '26px' }}>
 						<NavLink
 							to={item.path}
 							className={({ isActive }) =>
