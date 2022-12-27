@@ -8,6 +8,7 @@ import {
 	SettingsSix,
 	SettingsSeven,
 } from '../../Assets/Images/Icons/Icons';
+import { AdminManagement } from '../../Components/AdminManagement/AdminManagement';
 import { SettingsItem } from '../../Components/SettingsItem/SettingsItem';
 
 export const Settings = () => {
@@ -91,9 +92,7 @@ export const Settings = () => {
 					<Route
 						path="productsManagement"
 						element={
-							<h2 className="text-white">
-								lordasdasdasdasdsadsadasd
-							</h2>
+							<AdminManagement/>
 						}
 					/>
 				</Routes>
