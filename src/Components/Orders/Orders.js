@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './orders.scss';
 import Karzinka from '../../Assets/Images/Img/karzinka.svg';
 import { useRef } from 'react';
 import { MainCards } from '../Sh-MainCards/Sh-MainCards';
+import { DataContext } from '../DataContext/DataContext';
+
 export function Orders() {
 	const btnActive = useRef();
 
 
-
+  const { data,setData } = useContext(DataContext);
   const btnClick = () => {
     btnActive.current.classList.toggle("oreder-home__dine");
   };
@@ -51,22 +53,22 @@ export function Orders() {
 
           <div className="order-home__product-buy">
             <ul className="order-home__product-list product-list list-unstyled">
-              {MainCards.map((item) => (
-                <li key={item.price} className="product-list__item d-flex  gap-4">
+              {data.map((item) => (
+                <li key={item.id} className="product-list__item d-flex  gap-4">
                   <div className="w-75">
                     <div className="d-flex justify-content-between gap-1">
                       <div className="d-flex align-items-center gap-3">
-                        <img src={item.image} width="45" height="41" alt="" />
+                        <img src={`http://localhost:5000/${item.image}`} width="45" height="41" alt="" />
                         <div>
                           <p className="prosuct-list__name m-0">
-                            {item.foodName}
+                            {item.name}
                           </p>
                           <p className="prosuct-list__name product-list__price m-0">
                             {item.price}
                           </p>
                         </div>
                       </div>
-                      <button className="product-list__count">2</button>
+                      <button className="product-list__count">1</button>
                     </div>
                     <input
                       className="product-list__input mt-2"

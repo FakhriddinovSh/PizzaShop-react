@@ -32,6 +32,9 @@
 }
 
 .managment-box__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   max-width: 221px;
 
@@ -52,6 +55,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: auto;
+
   padding: 22px 35px 16px;
 }
 .managment-box__edit-btn {
