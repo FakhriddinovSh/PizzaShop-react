@@ -15,30 +15,38 @@ import './Sh-Sidebar.scss';
 export const Sidebar = () => {
 	const menuData = [
 		{
+			id:1,
 			imageUrl: <MenuSecond svg="svg" className="list-image" />,
 			path: '/',
 		},
 		{
+			id:2,
 			imageUrl: <MenuThird svg="svg" className="list-image" />,
 			path: '/two',
 		},
 		{
+			id:3,
 			imageUrl: <MenuFourth svg="svg" className="list-image" />,
 			path: '/piece',
 		},
 		{
+			id:4,
 			imageUrl: <MenuFivth svg="svg" className="list-image" />,
 			path: '/mail',
 		},
 		{
+			id:5,
 			imageUrl: <MenuSixth svg="svg" className="list-image" />,
 			path: '/notification',
 		},
 		{
+
+			id:6,
 			imageUrl: <MenuSeventh svg="svg" className="list-image" />,
 			path: '/settings',
 		},
 		{
+			id:7,
 			imageUrl: <MenuEigth svg="svg" className="list-image" />,
 			path: '/exit',
 		},
@@ -62,7 +70,7 @@ export const Sidebar = () => {
 					alt="Logo"
 				/>
 				{menuData.map((item) => (
-					<li key={item.path} style={{ marginBottom: '26px' }}>
+					<li key={item.id} style={{ marginBottom: '26px' }}>
 						<NavLink
 							to={item.path}
 							className={({ isActive }) =>

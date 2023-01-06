@@ -79,6 +79,7 @@ export const Settings = () => {
 					{settingsData.map((item) => {
 						return (
 							<SettingsItem
+								id={item.id}
 								path={item.path}
 								settinsIcon={item.settinsIcon}
 								title={item.title}
